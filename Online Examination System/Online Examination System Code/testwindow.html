@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+    <script src="sample-registration-form-validation.js"></script>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+</head>
+
+<body>
+    <form action="testwindow.php" method = 'post'>
+	    <tr>
+        <b> <?php echo $d[question_datadb]; ?>
+        <br> <br> </b>
+        <td>
+        <input type="radio" name="q1" id="q1" value ="<?php echo $d[option1db]; ?>">&nbsp <?php echo $d[option1db]; ?></input><br> 
+        <br>
+        <input type="radio" name="q1" id="q1" value ="<?php echo $d[option2db]; ?>">&nbsp <?php echo $d[option2db]; ?></input><br>
+        <br>
+        <input type="radio" name="q1" id="q1" value ="<?php echo $d[option3db]; ?>">&nbsp <?php echo $d[option3db]; ?></input><br>
+        <br> 
+        <input type="radio" name="q1" id="q1" value ="<?php echo $d[option4db]; ?>">&nbsp <?php echo $d[option4db]; ?></input><br>
+        <br><br>
+        </td>
+        <input type = 'submit' name = 'submit' value = Submit> 
+        </tr></form>
+</body>
+</html>
